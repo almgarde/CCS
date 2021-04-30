@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Zilla+Slab+Highlight:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: orange;
+  padding: 50px;
+  /* overflow-y: scroll; */
+}
+.padre {
+  width: 1000px;
+  height: 800px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header {
+  width: 90%;
+  height: 20%;
+  background-color: red;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 50%;
+  height: 100%;
+  background-color: green;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+}
+
+.iesweb {
+  width: 50%;
+  height: 100%;
+  justify-content: right;
+  background-color: white;
+  padding-left: 13%;
+  padding-top: 5%;
+}
+
+a {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a::before {
+  font-family: "Font Awesome 5 free";
+  color: black;
+  position: relative;
+  content: "\f007";
+  right: 40px;
+}
+
+.contenido {
+  width: 90%;
+  height: 70%;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.parte1 {
+  width: 40%;
+  height: 90%;
+  background-color: violet;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+p.lorem::first-letter {
+  color: blue;
+  font-size: 200%;
+}
+
+.parte2 {
+  width: 45%;
+  height: 90%;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sup,
+.inf {
+  width: 90%;
+  height: 20%;
+  background-color: blue;
+}
+
+.medio {
+  width: 90%;
+  height: 50%;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.izq {
+  width: 50%;
+  height: 100%;
+  background-color: pink;
+  padding-top: 5%;
+  padding-left: 3%;
+  order: 1;
+}
+
+form label {
+  font-weight: bold;
+}
+form .input {
+  width: 80%;
+  margin: 8px 0px;
+}
+
+form .input::placeholder {
+  color: red;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+form .submit {
+  background-color: #4caf50;
+  border: dotter;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0px;
+  cursor: pointer;
+}
+
+.der {
+  width: 50%;
+  height: 100%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
+
+.out {
+  width: 50%;
+  height: 50%;
+  background-color: greenyellow;
+  outline-width: 2px;
+  outline-color: black;
+  outline-style: dashed;
+  box-shadow: 10px 10px;
+}
+
+footer {
+  width: 90%;
+  height: 20%;
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.sec1,
+.sec2,
+.sec3 {
+  width: 100%;
+  height: 30%;
+  border: firebrick;
+  padding-top: 4%;
+  padding-left: 4%;
+}
+.sec1 {
+  order: 1;
+}
+
+.sec2 {
+  order: 2;
+}
+
+.sec3 {
+  order: 3;
+}
+
+p.footer {
+  font-family: New Tegomin;
+  font-size: 120%;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+  .contenido {
+    flex-direction: column-reverse;
+  }
+
+  .parte1,
+  .parte2 {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,51 @@
+.padre {
+  width: 600px;
+  height: 400;
+  background-color: blue;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%;
+}
+
+.hijo1 {
+  width: 40%;
+  height: 90%;
+  background-color: orange;
+}
+
+.hijo2 {
+  width: 55%;
+  height: 90%;
+  background-color: red;
+  justify-content: space-around;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.verde1,
+.verde3 {
+  width: 90%;
+  height: 25%;
+  background-color: green;
+}
+
+.verde2 {
+  width: 90%;
+  height: 25%;
+  background-color: green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.verde2 div {
+  width: 40%;
+  height: 80%;
+  background-color: black;
+  flex-direction: column;  
+  justify-content: space-around;
+  text-align: center;
+}
